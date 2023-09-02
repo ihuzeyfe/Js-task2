@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="club-name">
+        <div class="clubNameDiv"  >
+          <input id="clubNameNpt1" type="text"  placeholder="Takım İsmini Giriniz"/>
+          <div id="clubNameId1" class="teamName">Takım Adı</div>
+        </div>
+        <div class="clubNameDiv"  >
+            <input id="clubNameNpt2" type="text"  placeholder="Takım İsmini Giriniz"/>
+            <div id="clubNameId2" class="teamName">Takım Adı</div>
+          </div>
+      </div>
+      <div class="score-board">
+        <div class="add-dec">
+          <button  onclick="scoreAdd()" class="btn">+</button>
+          <button onclick="scoreDec()" class="btn">-</button>
+          <button onclick="refresh()" class="btn">refresh</button>
+          <div><p id="left">0</p></div>
+        </div>
+        <div class="add-dec">
+            <button  onclick="scoreAdd1()" class="btn">+</button>
+            <button onclick="scoreDec1()"  class="btn">-</button>
+            <button onclick="refresh1()" class="btn">refresh</button>
+            <div><p id="right">0</p></div>
+          </div>
+      </div>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
